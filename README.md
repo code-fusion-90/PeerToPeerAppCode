@@ -5,4 +5,4 @@ This app was concieved as an idea in year 2018 and integrates android app with f
 
 The app does not focus on UI elements and its basic functionality is to integrate with a user's fb account via Graphql to fetch data for various purposes.
 
-No longer actively maintained.
+Warning: May have legacy code. No longer actively maintained.
