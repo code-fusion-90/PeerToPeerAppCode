@@ -1,4 +1,4 @@
-# PeerToPeerAppCode
+# Social Media Integration Android
 Prototype for a social media score rating app
 
 This app was concieved as an idea in year 2018 and integrates android app with facebook & can be further possibly linked with linkedin & twitter. 
