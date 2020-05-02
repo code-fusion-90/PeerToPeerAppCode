@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="margin-top: 200px; text-align: center;">
+    <img src="https://goo.gl/1H14Q6" alt="Logo" width="300">
+    <h1><a style="font-family: 'Arial';" href="/auth/linkedin">Login with Linkedin</a></h1>
+    <h1><a style="font-family: 'Arial';" href="/auth/facebook">Login with Facebook</a></h1>
+    <h1><a style="font-family: 'Arial';" href="/auth/twitter">Login with Twitter</a></h1>
+    <h1><a style="font-family: 'Arial';" href="/">Homepage</a></h1>
+
+		    <form action="/auth/register" method="post">
+		  				Name:<br>
+		 			 		<input type="text" name="name" value="Mickey"><br>
+		  				Email:<br>
+		  					<input type="text" name="email" value="email"><br><br>
+		  				Pwd:<br>
+		 			 		<input type="text" name="password" value="password"><br>
+		  				Extra:<br>
+		  					<input type="text" name="extra" value="test"><br><br>
+		  				<input type="submit" value="Submit">
+		</form>
+    
+
+    	<form action="/auth/loginuser" method="post">
+		  				Email:<br>
+		  					<input type="text" name="email" value="email"><br><br>
+		  				Pwd:<br>
+		 			 		<input type="text" name="password" value="password"><br>
+		  				Extra:<br>
+		  				<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
+

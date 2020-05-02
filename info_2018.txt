@@ -1,0 +1,7 @@
+//**************************************************
+Status Log
+****************************************************
+Project Protoype Date: April, 2018
+Tech Stack: Nodejs, Express, Passport, Mysql, RxJava, Android Sdk
+Project Status: Prototype
+Author: Prateek

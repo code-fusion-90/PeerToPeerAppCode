@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">P2PProject</string>
+    <string name="facebook_app_id">2033025366795470</string>
+    <string name="fb_login_protocol_scheme">fb2033025366795470</string>
+    <string name="adders">P2PJPApps</string>
+</resources>

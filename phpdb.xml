@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.5
+- https://www.phpmyadmin.net
+- Enabler: PHPJP@EDMTP
+- Host: localhost:8889
+- Generation Time: Mar 25, 2019 at 04:00 PM
+- Server version: 5.7.25
+- PHP Version: 7.3.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="p2p_db" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="Companies">
+                CREATE TABLE `Companies` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Type` text NOT NULL,
+                  `SocialID` varchar(200) NOT NULL,
+                  `CompanyId` varchar(200) DEFAULT NULL,
+                  `CompanyName` varchar(100) NOT NULL,
+                  `Role` varchar(100) DEFAULT NULL,
+                  `Duration` int(5) DEFAULT NULL,
+                  `Ext1` varchar(50) DEFAULT NULL,
+                  `Ext2` varchar(50) DEFAULT NULL,
+                  `Ext3` int(10) DEFAULT NULL,
+                  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="RegisteredUsers">
+                CREATE TABLE `RegisteredUsers` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `uniqueId` varchar(50) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `encrypted_password` varchar(100) NOT NULL,
+                  `in_date` int(11) DEFAULT NULL,
+                  `up_date` int(11) DEFAULT NULL,
+                  `ext1` int(11) DEFAULT NULL,
+                  `ext2` int(11) DEFAULT NULL,
+                  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `uniqueId` (`uniqueId`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="Skills">
+                CREATE TABLE `Skills` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `SocialType` varchar(100) NOT NULL,
+                  `Type` varchar(200) NOT NULL,
+                  `Value` varchar(200) DEFAULT NULL,
+                  `Param1` varchar(200) DEFAULT NULL,
+                  `Param2` varchar(200) DEFAULT NULL,
+                  `Param3` varchar(200) DEFAULT NULL,
+                  `Param4` varchar(200) DEFAULT NULL,
+                  `Param5` varchar(200) DEFAULT NULL,
+                  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="SocialSessions">
+                CREATE TABLE `SocialSessions` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Type` varchar(50) NOT NULL,
+                  `SocialId` varchar(200) NOT NULL,
+                  `AccToken` varchar(500) NOT NULL,
+                  `NoOfCompanyPositions` int(5) DEFAULT NULL,
+                  `NoOfConnections` int(10) DEFAULT NULL,
+                  `Location` varchar(200) DEFAULT NULL,
+                  `PictureUrl` varchar(500) DEFAULT NULL,
+                  `Headline` varchar(500) DEFAULT NULL,
+                  `Summary` varchar(10000) DEFAULT NULL,
+                  `Ext1` int(11) DEFAULT NULL,
+                  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="UserData">
+                CREATE TABLE `UserData` (
+                  `UserId` varchar(100) DEFAULT NULL,
+                  `Type` varchar(20) NOT NULL,
+                  `SocialId` varchar(100) NOT NULL,
+                  `Name` varchar(200) DEFAULT NULL,
+                  `Email` varchar(200) DEFAULT NULL,
+                  `Phone` int(12) DEFAULT NULL,
+                  `DOB` date DEFAULT NULL,
+                  `ProfilePic` varchar(500) DEFAULT NULL,
+                  `Ext2` varchar(50) DEFAULT NULL,
+                  `Ext3` int(10) DEFAULT NULL,
+                  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'p2p_db'
+    -->
+    <database name="p2p_db">
+        <!-- Table Companies -->
+        <table name="Companies">
+            <column name="Id">5</column>
+            <column name="Type">linkedin</column>
+            <column name="SocialID">cjQpwkvsNT</column>
+            <column name="CompanyId">7875625</column>
+            <column name="CompanyName">Himchem Industries - India</column>
+            <column name="Role">Chief IT Manager</column>
+            <column name="Duration">2017</column>
+            <column name="Ext1">NULL</column>
+            <column name="Ext2">NULL</column>
+            <column name="Ext3">NULL</column>
+            <column name="Timestamp">2019-03-19 12:40:48</column>
+        </table>
+        <!-- Table RegisteredUsers -->
+        <table name="RegisteredUsers">
+            <column name="id">1</column>
+            <column name="uniqueId">31330</column>
+            <column name="name">Mickey</column>
+            <column name="email">email</column>
+            <column name="encrypted_password">password</column>
+            <column name="in_date">NULL</column>
+            <column name="up_date">NULL</column>
+            <column name="ext1">NULL</column>
+            <column name="ext2">NULL</column>
+            <column name="Timestamp">2019-03-20 18:01:58</column>
+        </table>
+        <table name="RegisteredUsers">
+            <column name="id">2</column>
+            <column name="uniqueId">19887</column>
+            <column name="name">Mickey</column>
+            <column name="email">email1</column>
+            <column name="encrypted_password">password</column>
+            <column name="in_date">NULL</column>
+            <column name="up_date">NULL</column>
+            <column name="ext1">NULL</column>
+            <column name="ext2">NULL</column>
+            <column name="Timestamp">2019-03-20 18:02:49</column>
+        </table>
+        <table name="RegisteredUsers">
+            <column name="id">3</column>
+            <column name="uniqueId">11512</column>
+            <column name="name">Test</column>
+            <column name="email">email123</column>
+            <column name="encrypted_password">password2</column>
+            <column name="in_date">NULL</column>
+            <column name="up_date">NULL</column>
+            <column name="ext1">NULL</column>
+            <column name="ext2">NULL</column>
+            <column name="Timestamp">2019-03-24 15:44:59</column>
+        </table>
+        <table name="RegisteredUsers">
+            <column name="id">4</column>
+            <column name="uniqueId">33544</column>
+            <column name="name">Test</column>
+            <column name="email">email54</column>
+            <column name="encrypted_password">password98</column>
+            <column name="in_date">NULL</column>
+            <column name="up_date">NULL</column>
+            <column name="ext1">NULL</column>
+            <column name="ext2">NULL</column>
+            <column name="Timestamp">2019-03-25 21:24:25</column>
+        </table>
+        <!-- Table Skills -->
+        <!-- Table SocialSessions -->
+        <table name="SocialSessions">
+            <column name="Id">5</column>
+            <column name="Type">linkedin</column>
+            <column name="SocialId">cjQpwkvsNT</column>
+            <column name="AccToken">AQVMaxFMLZvIJHPYca6ucRfVGLOJdz9348yZFiC-lc3UiMTcawS7QyVacg_RbXGXGqX98Jiv0DZ5bXWrWfpnfmRzy-QxjhP4RkcsNCaa8hu3QkR8vqZUFdVrV3HmYjPYM3JeQYkIzp7fWxRNjtU-I_ktMyT5JjXbxAqJAtlJWPH9ux9SUrtlgOQ5k4MqjwbaLLGCswLxabBq7EwwNt-wdQDz-ZSiD2e6Y_gHAkbEf7BQVLWxT6TQnXsgorjCoqGjS_lvUgcMlUpy2qxkfoe_dxC4L5OdPk4Y6G_x7TgggKRM8Qi-wUNzfekEHcOryl0Bzfq94Pu8TtYmhFSQAJi7Ufe_qfxzJA</column>
+            <column name="NoOfCompanyPositions">1</column>
+            <column name="NoOfConnections">500</column>
+            <column name="Location">New Delhi Area, India</column>
+            <column name="PictureUrl">https://media.licdn.com/dms/image/C4D03AQHZsaVfqmz3ag/profile-displayphoto-shrink_100_100/0?e=1558569600&amp;v=beta&amp;t=Ic13StlfXhYay5v8vbvVSidMuQeyxP230peLNOfUu6o</column>
+            <column name="Headline">IBM Maximo Consultant</column>
+            <column name="Summary">Time is the most valuable currency. Be aware of how you spend it.</column>
+            <column name="Ext1">NULL</column>
+            <column name="Timestamp">2019-03-19 12:40:48</column>
+        </table>
+        <!-- Table UserData -->
+        <table name="UserData">
+            <column name="UserId">NULL</column>
+            <column name="Type">facebook</column>
+            <column name="SocialId">2358670324418270</column>
+            <column name="Name">Prateek Jain</column>
+            <column name="Email">eternalmuzic@gmail.com</column>
+            <column name="Phone">NULL</column>
+            <column name="DOB">NULL</column>
+            <column name="ProfilePic">NULL</column>
+            <column name="Ext2">NULL</column>
+            <column name="Ext3">NULL</column>
+            <column name="Timestamp">2019-03-25 21:22:12</column>
+        </table>
+    </database>
+</pma_xml_export>
